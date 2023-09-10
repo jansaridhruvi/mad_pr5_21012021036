@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="64dp"
+        android:text="MP3 player"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView3"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:elevation="300dp"
+        android:layout_margin="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/music" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:elevation="40dp"
+        app:cardElevation="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView3">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/random"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_random"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:fabCustomSize="45dp"
+            app:fabSize="normal">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_left"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:fabSize="normal"
+            app:maxImageSize="25dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_play"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:fabCustomSize="80dp"
+            app:fabSize="normal"
+            app:maxImageSize="35dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="90dp"
+            android:src="@drawable/ic_next"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:fabSize="normal"
+            app:maxImageSize="25dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_stop"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:fabCustomSize="47dp"
+            app:fabSize="normal"
+            app:maxImageSize="32dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Dosti Music Video"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
