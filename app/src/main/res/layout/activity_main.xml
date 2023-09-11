@@ -75,6 +75,7 @@
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/play"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:layout_gravity="start|center"
@@ -104,6 +105,7 @@
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stop"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="end|center"
